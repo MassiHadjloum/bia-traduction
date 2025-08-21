@@ -1,0 +1,71 @@
+{
+  "greeting": {
+    "hello": "Bonjour 👋"
+  },
+  "localeSwitcher": {
+    "label": "Changer de langue",
+    "locale": "{locale, select, en {🇬🇧 Anglais} fr {🇫🇷 Français} ar {🇸🇦 Arabe} other {🔍 Inconnu} }"
+  },
+  "hero": {
+    "title": "Bureau de Traduction – Ouaguenoun - Maitre Bia",
+    "subtitle": "Spécialisé dans la traduction de documents juridiques, académiques, administratifs et professionnels.",
+    "tagline": "Traductions précises en Arabe, Français et Anglais",
+    "button": "Contactez nous"
+  },
+  "grid": {
+    "button": "Contactez nous"
+  },
+  "services": {
+    "title": "Nos <s_title>Services</s_title>",
+    "description": "Nous mettons à votre disposition une expertise en traduction officielle (arabe, français, anglais), pour tous vos documents juridiques, académiques, administratifs et professionnels."
+  },
+  "about": {
+    "title": "Pourquoi nous <s_title>Choisir</s_title> ?"
+  },
+  "approach": {
+    "title": "Notre <s_title>Démarche</s_title>",
+    "phase": "Phase"
+  },
+  "contact": {
+    "title": "Contactez <s_title>Nous</s_title>",
+    "contactInfo": {
+      "openingHours": "Heures d’ouverture",
+      "openingDays": {
+        "week": "Dim – Jeu :",
+        "hours": "8:30 – 16:00",
+        "weekend": "Ven – Sam :",
+        "closed": "Fermé"
+      },
+      "addressTitle": "Adresse du siège",
+      "addressValue": "À côté de la Polyclinique Tiqobaɛin Wagnun",
+      "phoneTitle": "Contacts",
+      "phoneValue": "0553 91 38 21 / 0698 53 48 72",
+      "emailTitle": "Courriel",
+      "emailValue": "bia.traduction@gmail.com",
+      "socialTitle": "Restons en contact"
+    },
+    "contactForm": {
+      "title": "Envoyez-nous un message",
+      "fields": {
+        "name": {
+          "label": "Nom & Prénom",
+          "placeholder": "Entrez votre nom et prénom"
+        },
+        "email": {
+          "label": "Votre email",
+          "placeholder": "Entrez votre adresse email"
+        },
+        "message": {
+          "label": "Votre message",
+          "placeholder": "Écrivez votre message..."
+        }
+      },
+      "submit": "Envoyer"
+    }
+  },
+  "footer": {
+    "title": "Prêt à donner <s_title>plus de portée et d’impact</s_title> à vos mots au-delà des frontières ?",
+    "subtitle": "Confiez-nous vos documents et bénéficiez de traductions professionnelles, précises et adaptées à votre audience, partout dans le monde.",
+    "button": "Entrons en contact"
+  }
+}

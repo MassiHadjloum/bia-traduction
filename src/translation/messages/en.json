@@ -1,0 +1,71 @@
+{
+  "greeting": {
+    "hello": "Hi there 👋"
+  },
+  "localeSwitcher": {
+    "label": "Change language",
+    "locale": "{locale, select, en {🇬🇧 English} fr {🇫🇷 French} ar {🇸🇦 Arabic} other {🔍 Unknown} }"
+  },
+  "hero": {
+    "title": "Translation Office – Ouaguenoun",
+    "subtitle": "Specialized in translating legal, academic, administrative, and professional documents.",
+    "tagline": "Accurate translations in Arabic, French, and English",
+    "button": "Get in touch"
+  },
+  "grid": {
+    "button": "Get in touch"
+  },
+  "services": {
+    "title": "Our <s_title>Services</s_title>",
+    "description": "We provide you with professional translation expertise between Arabic, French, and English, tailored to your legal, academic, administrative, and professional needs."
+  },
+  "about": {
+    "title": "Why <s_title>Choose</s_title> Us?"
+  },
+  "approach": {
+    "title": "Our <s_title>Approach</s_title>",
+    "phase": "Phase"
+  },
+  "contact": {
+    "title": "Contact <s_title>Us</s_title>",
+    "contactInfo": {
+      "openingHours": "Opening Hours",
+      "openingDays": {
+        "week": "Sun – Thu:",
+        "hours": "8:30 AM – 4:00 PM",
+        "weekend": "Fri – Sat:",
+        "closed": "Closed"
+      },
+      "addressTitle": "Head Office Address",
+      "addressValue": "Next to Polyclinic Tiqobaɛin Wagnun",
+      "phoneTitle": "Contacts",
+      "phoneValue": "0553 91 38 21 / 0698 53 48 72",
+      "emailTitle": "Email",
+      "emailValue": "bia.traduction@gmail.com",
+      "socialTitle": "Stay in touch"
+    },
+    "contactForm": {
+      "title": "Send us a message",
+      "fields": {
+        "name": {
+          "label": "Full Name",
+          "placeholder": "Enter your full name"
+        },
+        "email": {
+          "label": "Your email",
+          "placeholder": "Enter your email address"
+        },
+        "message": {
+          "label": "Your message",
+          "placeholder": "Write your message..."
+        }
+      },
+      "submit": "Send"
+    }
+  },
+  "footer": {
+    "title": "Ready to give your words <s_title>more reach and impact</s_title> beyond borders?",
+    "subtitle": "Entrust us with your documents and benefit from professional, accurate, and audience-adapted translations, anywhere in the world.",
+    "button": "Get in touch"
+  }
+}
