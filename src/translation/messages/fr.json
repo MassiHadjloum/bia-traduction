@@ -1,13 +1,10 @@
 {
-  "greeting": {
-    "hello": "Bonjour 👋"
-  },
   "localeSwitcher": {
     "label": "Changer de langue",
     "locale": "{locale, select, en {🇬🇧 Anglais} fr {🇫🇷 Français} ar {🇸🇦 Arabe} other {🔍 Inconnu} }"
   },
   "hero": {
-    "title": "Bureau de Traduction – Ouaguenoun - Maitre Bia",
+    "title": "Bureau de Traduction – Ouaguenoun - <s_title>Maitre Bia</s_title>",
     "subtitle": "Spécialisé dans la traduction de documents juridiques, académiques, administratifs et professionnels.",
     "tagline": "Traductions précises en Arabe, Français et Anglais",
     "button": "Contactez nous"
@@ -67,5 +64,10 @@
     "title": "Prêt à donner <s_title>plus de portée et d’impact</s_title> à vos mots au-delà des frontières ?",
     "subtitle": "Confiez-nous vos documents et bénéficiez de traductions professionnelles, précises et adaptées à votre audience, partout dans le monde.",
     "button": "Entrons en contact"
+  },
+  "notFound": {
+    "tagline": "404 – Page introuvable",
+    "subtitle": "Oups ! La page que vous cherchez n’existe pas ou a été déplacée.",
+    "button": "Retour à l’accueil"
   }
 }

@@ -7,7 +7,7 @@
     "locale": "{locale, select, en {🇬🇧 English} fr {🇫🇷 French} ar {🇸🇦 Arabic} other {🔍 Unknown} }"
   },
   "hero": {
-    "title": "Translation Office – Ouaguenoun",
+    "title": "Translation Office – Ouaguenoun - <s_title>Master Bia</s_title>",
     "subtitle": "Specialized in translating legal, academic, administrative, and professional documents.",
     "tagline": "Accurate translations in Arabic, French, and English",
     "button": "Get in touch"
@@ -67,5 +67,10 @@
     "title": "Ready to give your words <s_title>more reach and impact</s_title> beyond borders?",
     "subtitle": "Entrust us with your documents and benefit from professional, accurate, and audience-adapted translations, anywhere in the world.",
     "button": "Get in touch"
+  },
+  "notFound": {
+    "tagline": "404 – Page Not Found",
+    "subtitle": "Oops! The page you are looking for does not exist or has been moved.",
+    "button": "Back to Home"
   }
 }

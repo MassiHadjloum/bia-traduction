@@ -1,17 +1,17 @@
 // "use client";
 
 import { FaLocationArrow } from "react-icons/fa6";
-import MagicButton from "./MagicButton";
-import { Spotlight } from "./ui/Spotlight";
-import { TextGenerateEffect } from "./ui/TextGenerateEffect";
+import MagicButton from "../../components/MagicButton";
+import { Spotlight } from "../../components/ui/Spotlight";
+import { TextGenerateEffect } from "../../components/ui/TextGenerateEffect";
 import { getTranslations } from "next-intl/server";
 
-const Hero = async () => {
-  const t = await getTranslations("hero");
+const NotFoundPage = async () => {
+  const t = await getTranslations("notFound");
   return (
     <>
       <div className="bg-transparent h-16 w-full" />
-      <div className="pb-20 pt-10" id="hero">
+      <div className="pb-20 pt-10">
         {/* Spotlights */}
         <div>
           <Spotlight
@@ -44,12 +44,12 @@ const Hero = async () => {
         {/* Hero content */}
         <div className="flex justify-center relative my-20 z-10">
           <div className="max-w-[89vw] md:max-w-2xl lg:max-w-[60vw] flex flex-col items-center justify-center">
-            <h1 className="uppercase tracking-widest text-center text-blue-100  
+            {/* <h1 className="uppercase tracking-widest text-center text-blue-100  
                 text-sm md:text-lg lg:text-xl max-w-80 ">
               {t.rich("title", {
                 s_title: (chunks) => <span className="text-purple">{chunks}</span>,
               })}
-            </h1>
+            </h1> */}
 
             <TextGenerateEffect
               words={t("tagline")}
@@ -60,7 +60,7 @@ const Hero = async () => {
               {t("subtitle")}
             </p>
 
-            <a href="#contact">
+            <a href="/">
               <MagicButton
                 title={t("button")}
                 icon={<FaLocationArrow />}
@@ -74,4 +74,4 @@ const Hero = async () => {
   );
 };
 
-export default Hero;
+export default NotFoundPage;

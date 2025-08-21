@@ -16,7 +16,7 @@ interface LocalSwitcherProps {
 }
 
 const LocalSwitcherSelect = ({ children, defaultValue
- }: LocalSwitcherProps) => {
+}: LocalSwitcherProps) => {
   const [isPending, startTransition] = useTransition()
   const router = useRouter();
   const pathname = usePathname()
@@ -25,7 +25,7 @@ const LocalSwitcherSelect = ({ children, defaultValue
   const onSelectChange = (value: string) => {
     const nextLocale = value;
     startTransition(() => {
-    setUserLocale(nextLocale)
+      setUserLocale(nextLocale)
       router.replace(
         // eslint-disable-next-line @typescript-eslint/ban-ts-comment
         // @ts-expect-error
@@ -41,7 +41,7 @@ const LocalSwitcherSelect = ({ children, defaultValue
       {/* <p className="sr-only">{label}</p> */}
       <Select onValueChange={onSelectChange} defaultValue={defaultValue}
         disabled={isPending}>
-        <SelectTrigger className="bg-transparent z-50 border-none">
+        <SelectTrigger aria-label="Changer de langue" className="bg-transparent z-50 border-none">
           {/* <LanguagesIcon /> */}
           <LucideLanguages size={20} />
         </SelectTrigger>

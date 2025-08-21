@@ -2,16 +2,19 @@ import { PhoneCall, Mail, Facebook } from "lucide-react";
 export const socialMedia = [
   {
     id: 1,
+    name: "Téléphone",
     img: PhoneCall,
     link: "tel:+213553 91 38 21",
   },
   {
     id: 2,
+    name: "Email",
     img: Mail,
     link: "mailto:bia.traduction@gmail.com",
   },
   {
     id: 3,
+    name: "Facebook",
     img: Facebook,
     link: "https://www.facebook.com/profile.php?id=61578967271622",
   },

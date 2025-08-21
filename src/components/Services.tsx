@@ -42,9 +42,9 @@ export default async function Services() {
               <div className="border-0.75 relative flex h-full flex-col justify-between gap-6 overflow-hidden rounded-xl p-6 md:p-6 dark:shadow-[0px_0px_27px_0px_#2D2D2D] min-h-[220px]">
                 <div className="flex flex-col items-start gap-3">
                   <Icon className="w-12 h-12 text-indigo-600" />
-                  <h3 className="font-sans text-xl md:text-2xl font-semibold text-black dark:text-purple">
+                  <h2 className="font-sans text-xl md:text-2xl font-semibold text-black dark:text-purple">
                     {service.title[local]}
-                  </h3>
+                  </h2>
                   <p className="text-start text-gray-700 dark:text-white-100 mt-2 font-medium">
                     {service.desc[local]}
                   </p>
