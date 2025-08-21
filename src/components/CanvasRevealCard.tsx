@@ -3,8 +3,14 @@
 import { AnimatePresence, motion } from "framer-motion";
 import AceternityIcon, { Icon } from "./ui/AceternityIcon";
 import { useState } from "react";
-import { CanvasRevealEffect } from "./ui/CanvasRevealEffect";
+// import { CanvasRevealEffect } from "./ui/CanvasRevealEffect";
 import { useLocale, useTranslations } from "next-intl";
+
+import dynamic from "next/dynamic";
+
+const CanvasRevealEffect = dynamic(() => import("./ui/CanvasRevealEffect"), {
+  ssr: false, // 🚫 désactive SSR
+});
 
 const Card = ({
   title,

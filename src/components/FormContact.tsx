@@ -22,7 +22,7 @@ const FormContact = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    console.log("Formulaire soumis ✅", formData);
+    // console.log("Formulaire soumis ✅", formData);
     // 👉 Ici tu peux ajouter ton envoi vers une API, emailjs, backend, etc.
   };
 

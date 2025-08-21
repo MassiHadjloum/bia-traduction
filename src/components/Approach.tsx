@@ -3,6 +3,14 @@ import React from "react";
 import { useTranslations } from "next-intl";
 import { CanvasRevealCardContent } from "./CanvasRevealCard";
 
+// import dynamic from "next/dynamic";
+
+// const CanvasRevealCardContent = dynamic(() => import("./CanvasRevealCard").then(
+//   (m) => m.CanvasRevealCardContent
+// ), {
+//   ssr: false, // 🚫 désactive SSR
+// });
+
 
 const Approach = () => {
   const t = useTranslations("approach");

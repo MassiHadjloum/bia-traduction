@@ -34,14 +34,14 @@ export const navItems = [
     }, 
     link: "#services" 
   },
-  { 
-    name: {
-      fr: "Expertise",
-      en: "Expertise",
-      ar: "الخبرة"
-    }, 
-    link: "#about" 
-  },
+  // { 
+  //   name: {
+  //     fr: "Expertise",
+  //     en: "Expertise",
+  //     ar: "الخبرة"
+  //   }, 
+  //   link: "#about" 
+  // },
   { 
     name: {
       fr: "Approche",
