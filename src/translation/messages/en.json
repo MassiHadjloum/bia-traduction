@@ -7,6 +7,8 @@
     "locale": "{locale, select, en {🇬🇧 English} fr {🇫🇷 French} ar {🇸🇦 Arabic} other {🔍 Unknown} }"
   },
   "hero": {
+    "navtitle": "Translation Office – Ouaguenoun ",
+    "navDesc": "Master Bia",
     "title": "Translation Office – Ouaguenoun - <s_title>Master Bia</s_title>",
     "subtitle": "Specialized in translating legal, academic, administrative, and professional documents.",
     "tagline": "Accurate translations in Arabic, French, and English",

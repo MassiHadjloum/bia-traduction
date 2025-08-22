@@ -18,6 +18,29 @@
   .heading {
     @apply font-bold text-4xl md:text-5xl text-center;
   }
+
+    /* Mobile Navigation */
+  .mobile-header {
+    @apply flex h-[60px] px-5 xs:hidden;
+  }
+  .header-user {
+    @apply my-3 flex items-center gap-2 rounded-full p-1 text-white sm:justify-center lg:justify-start lg:p-3 !important;
+  }
+  .header-user-avatar {
+    @apply aspect-square w-10 rounded-full object-cover !important;
+  }
+  .mobile-nav {
+    @apply flex-1 gap-1 !important;
+  }
+  .mobile-nav-list {
+    @apply flex flex-1 flex-col gap-4 !important;
+  }
+  .mobile-nav-item {
+    @apply flex text-white hover:bg-[#CBACF9] border-2 border-white hover:border-white-100 
+    gap-4 w-full justify-center items-center px-6 h-[52px] rounded-full !important;
+  }
+
+
 }
 
 @layer base {

@@ -24,6 +24,9 @@ const config = {
       },
     },
     extend: {
+    screens: {
+      'xs': { 'min': '499px' },
+    },
       // colors: {
       //   green: {
       //     "500": "#24AE7C",

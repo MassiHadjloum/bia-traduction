@@ -3,6 +3,7 @@
 // import Footer from "@/components/Footer";
 // import Grid from "@/components/Grid";
 import Hero from "@/components/Hero";
+import MobileNavigation from "@/components/MobileNav";
 // import Services from "@/components/Services";
 import FloatingNav from "@/components/ui/FloatingNavbar";
 // import ScrollToTop from "@/components/ui/ScrollToTop";
@@ -22,8 +23,9 @@ const ScrollToTop = dynamic(() => import("@/components/ui/ScrollToTop"), { ssr: 
 export default async function Home() {
   const locale = await getLocale();
   return (
-    <main className="relative bg-black-100 flex justify-center items-center flex-col overflow-hidden mx-auto sm:px-10 px-5">
-      <div className="max-w-7xl w-full">
+    <main className="relative bg-black-100 flex justify-center items-center flex-col overflow-hidden mx-auto">
+      <MobileNavigation />
+      <div className="max-w-7xl w-full sm:px-10 px-5">
         <FloatingNav navItems={locale === "ar" ? navItems.reverse() : navItems} />
         <Hero />
         <Grid />

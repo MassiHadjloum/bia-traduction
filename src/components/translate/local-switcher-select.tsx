@@ -8,19 +8,23 @@ import { Select, SelectTrigger } from "../ui/select";
 import clsx from "clsx";
 import { LucideLanguages } from "lucide-react";
 import { setUserLocale } from "../../translation/services/locale";
+import { useLocale, useTranslations } from "next-intl";
 
 interface LocalSwitcherProps {
   children?: ReactNode;
   defaultValue?: string;
   label?: string;
+  className?: string;
 }
 
-const LocalSwitcherSelect = ({ children, defaultValue
+const LocalSwitcherSelect = ({ children, defaultValue, className, label
 }: LocalSwitcherProps) => {
   const [isPending, startTransition] = useTransition()
   const router = useRouter();
   const pathname = usePathname()
   const params = useParams()
+    const t = useTranslations('localeSwitcher')
+    const locale = useLocale()
 
   const onSelectChange = (value: string) => {
     const nextLocale = value;
@@ -36,14 +40,15 @@ const LocalSwitcherSelect = ({ children, defaultValue
   }
   return (
     <Label className={clsx("relative backdrop-blur-md bg-transparent",
-      isPending && "transition-opacity [&:disabled]:opacity-30"
+      isPending && "transition-opacity [&:disabled]:opacity-30", className
     )}>
       {/* <p className="sr-only">{label}</p> */}
       <Select onValueChange={onSelectChange} defaultValue={defaultValue}
         disabled={isPending}>
-        <SelectTrigger aria-label="Changer de langue" className="bg-transparent z-50 border-none">
+        <SelectTrigger aria-label="Changer de langue" className="bg-transparent z-50 border-none w-full">
           {/* <LanguagesIcon /> */}
           <LucideLanguages size={20} />
+          {className && t("locale", { locale: locale })}
         </SelectTrigger>
         {children}
       </Select>

@@ -4,6 +4,8 @@
     "locale": "{locale, select, en {🇬🇧 Anglais} fr {🇫🇷 Français} ar {🇸🇦 Arabe} other {🔍 Inconnu} }"
   },
   "hero": {
+    "navtitle": "Bureau de Traduction – Ouaguenoun ",
+    "navDesc": "Maitre Bia",
     "title": "Bureau de Traduction – Ouaguenoun - <s_title>Maitre Bia</s_title>",
     "subtitle": "Spécialisé dans la traduction de documents juridiques, académiques, administratifs et professionnels.",
     "tagline": "Traductions précises en Arabe, Français et Anglais",
