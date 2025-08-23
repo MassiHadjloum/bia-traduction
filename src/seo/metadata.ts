@@ -4,11 +4,11 @@ const baseUrl = "https://bia-traduction-r8gl.vercel.app";
 
 export const seoMetadata: Record<string, Metadata> = {
   fr: {
-    title: "Bureau de Traduction – Ouaguenoun – Maître Bia",
+    title: "Office de traduction officiel – Ouaguenoun – Maître Bia",
     description:
       "Spécialiste de la traduction de documents juridiques, académiques, administratifs et professionnels. Disponible en Arabe, Français et Anglais.",
     keywords: [
-      "bureau de traduction",
+      "Office de traduction officiel",
       "traduction officielle",
       "traduction juridique",
       "traduction académique",
@@ -20,17 +20,17 @@ export const seoMetadata: Record<string, Metadata> = {
       "anglais",
     ],
     openGraph: {
-      title: "Bureau de Traduction – Maître Bia",
+      title: "Office de traduction officiel – Maître Bia",
       description:
         "Traductions précises et professionnelles en Arabe, Français et Anglais.",
       url: `${baseUrl}/fr`,
-      siteName: "Bureau de Traduction",
+      siteName: "Office de traduction officiel",
       images: [
         {
           url: `${baseUrl}/og-image-fr.jpg`,
           width: 1200,
           height: 630,
-          alt: "Bureau de Traduction – Maître Bia",
+          alt: "Office de traduction officiel – Maître Bia",
         },
       ],
       locale: "fr_FR",
@@ -47,7 +47,7 @@ export const seoMetadata: Record<string, Metadata> = {
   },
 
   ar: {
-    title: "مكتب الترجمة – واقنون – الأستاذ بيا",
+    title: "ديوان الترجمة الرسمية – واقنون – الأستاذ بية",
     description:
       "متخصصون في ترجمة الوثائق القانونية والأكاديمية والإدارية والمهنية. نقدم ترجمات دقيقة باللغات العربية والفرنسية والإنجليزية.",
     keywords: [
@@ -63,16 +63,16 @@ export const seoMetadata: Record<string, Metadata> = {
       "الإنجليزية",
     ],
     openGraph: {
-      title: "مكتب الترجمة – الأستاذ بيا",
+      title: "ديوان الترجمة الرسمية – الأستاذ بية",
       description: "ترجمات دقيقة واحترافية باللغات العربية والفرنسية والإنجليزية.",
       url: `${baseUrl}/ar`,
-      siteName: "مكتب الترجمة",
+      siteName: "ديوان الترجمة الرسمية",
       images: [
         {
           url: `${baseUrl}/og-image-ar.jpg`,
           width: 1200,
           height: 630,
-          alt: "مكتب الترجمة – الأستاذ بيا",
+          alt: "ديوان الترجمة الرسمية – الأستاذ بية",
         },
       ],
       locale: "ar_DZ",
@@ -89,11 +89,11 @@ export const seoMetadata: Record<string, Metadata> = {
   },
 
   en: {
-    title: "Translation Office – Ouaguenoun – Maître Bia",
+    title: "Official Translation Office – Ouaguenoun – Maître Bia",
     description:
       "Specialized in translating legal, academic, administrative, and professional documents. Accurate translations in Arabic, French, and English.",
     keywords: [
-      "translation office",
+      "Official Translation Office",
       "official translation",
       "legal translation",
       "academic translation",
@@ -105,16 +105,16 @@ export const seoMetadata: Record<string, Metadata> = {
       "English",
     ],
     openGraph: {
-      title: "Translation Office – Maître Bia",
+      title: "Official Translation Office – Maître Bia",
       description: "Accurate and professional translations in Arabic, French, and English.",
       url: `${baseUrl}/en`,
-      siteName: "Translation Office",
+      siteName: "Official Translation Office",
       images: [
         {
           url: `${baseUrl}/og-image-en.jpg`,
           width: 1200,
           height: 630,
-          alt: "Translation Office – Maître Bia",
+          alt: "Official Translation Office – Maître Bia",
         },
       ],
       locale: "en_US",

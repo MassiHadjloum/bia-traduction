@@ -14,8 +14,7 @@ const FAQ = () => {
         })}
       </h1>
       {/* remove bg-white dark:bg-black */}
-      <Accordion type="single" collapsible className="w-full" 
-        >
+      <Accordion type="single" collapsible className="w-full" >
         {t.raw("items").map((item: any, index: number) => (
           <AccordionItem key={index} value={`faq-${index}`} 
           dir={locale === "ar" ? "rtl" : "ltr"}>

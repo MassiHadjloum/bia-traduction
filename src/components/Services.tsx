@@ -14,9 +14,9 @@ export default async function Services() {
       </h1>
 
       {/* Intro */}
-      <div className="max-w-full pt-14 pb-6 px-4 md:px-8 lg:px-10"
+      <div className="max-w-full pt-14 pb-6 px-4 md:px-8 lg:px-10 flex justify-center"
         dir={local === "ar" ? "rtl" : "ltr"}>
-        <p className="text-neutral-700 dark:text-neutral-300 text-lg md:text-base">
+        <p className="text-neutral-700 max-w-3xl dark:text-neutral-300 text-center text-lg md:text-base">
           {t("description")}
         </p>
       </div>

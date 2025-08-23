@@ -7,11 +7,11 @@
     "locale": "{locale, select, en {🇬🇧 English} fr {🇫🇷 French} ar {🇸🇦 Arabic} other {🔍 Unknown} }"
   },
   "hero": {
-    "navtitle": "Translation Office – Ouaguenoun ",
+    "navtitle": "Official Translation Office – Ouaguenoun ",
     "navDesc": "Master Bia",
-    "title": "Translation Office – Ouaguenoun - <s_title>Master Bia</s_title>",
+    "title": "Official Translation Office – Ouaguenoun - <s_title>Master Bia</s_title>",
     "subtitle": "Specialized in translating legal, academic, administrative, and professional documents.",
-    "tagline": "Accurate translations in Arabic, French, and English",
+    "tagline": "Accurate  translations  in  Arabic,  French,  and  English",
     "button": "Get in touch"
   },
   "grid": {
@@ -19,7 +19,7 @@
   },
   "services": {
     "title": "Our <s_title>Services</s_title>",
-    "description": "We provide you with professional translation expertise between Arabic, French, and English, tailored to your legal, academic, administrative, and professional needs."
+    "description": "We provide you with official and accurate translations (Arabic, French, English) for all your legal, academic, administrative, and professional documents."
   },
   "about": {
     "title": "Why <s_title>Choose</s_title> Us?"
@@ -39,7 +39,7 @@
         "closed": "Closed"
       },
       "addressTitle": "Head Office Address",
-      "addressValue": "Next to Polyclinic Tiqobaɛin Wagnun",
+      "addressValue": "Next to Polyclinic Tiqobaɛin Ouaguenoun",
       "phoneTitle": "Contacts",
       "phoneValue": "0553 91 38 21 / 0698 53 48 72",
       "emailTitle": "Email",
@@ -66,8 +66,8 @@
     }
   },
   "footer": {
-    "title": "Ready to give your words <s_title>more reach and impact</s_title> beyond borders?",
-    "subtitle": "Entrust us with your documents and benefit from professional, accurate, and audience-adapted translations, anywhere in the world.",
+    "title": "Give your <s_title>documents greater impact</s_title> beyond borders.",
+    "subtitle": "Entrust your documents to us for reliable, high-quality translations tailored to your needs, always delivered on time.",
     "button": "Get in touch"
   },
   "notFound": {
@@ -91,8 +91,8 @@
         "answer": "The timeline depends on the volume and complexity of the document. We are committed to meeting your deadlines."
       },
       {
-        "question": "Do you offer proofreading services?",
-        "answer": "Yes, we provide proofreading and final validation to ensure accuracy and quality."
+        "question": "Do I need to provide the original document for a certified translation?",
+        "answer": "Yes, the original document is mandatory for any certified translation. This ensures the authenticity and legal validity of the translation."
       }
     ]
   }

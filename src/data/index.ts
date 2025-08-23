@@ -5,7 +5,7 @@ export const gridItems = [
     id: 1,
     // title: "De l’arabe au français, de l’académique au juridique, nous traduisons tout.",
     title: {
-       fr: "",
+      fr: "",
       en: "",
       ar: "",
     },
@@ -13,7 +13,7 @@ export const gridItems = [
     //    fr: "De l’arabe au français, de l’académique au juridique, nous traduisons tout.",
     //   en: "From Arabic to French, from academic to legal, we translate everything.",
     //   ar: "من العربية إلى الفرنسية، ومن الأكاديمية إلى القانونية، نترجم كل شيء."
-    
+
     // },
     description: {
       fr: "",
@@ -29,9 +29,9 @@ export const gridItems = [
   {
     id: 2,
     title: {
-      fr: "Vos documents, compris partout dans le monde",
-      en: "Your documents, understood worldwide",
-      ar: "مستنداتكم مفهومة في جميع أنحاء العالم"
+      fr: "Traductions officielles reconnues à l’étranger",
+      en: "Official translations valid abroad",
+      ar: "ترجمات رسمية معترف بها في الخارج"
     },
     description: {
       fr: "",
@@ -61,13 +61,13 @@ export const gridItems = [
     // titleClassName: "justify-center",
     // img: "/grid.svg",
     // spareImg: "",
-        id: 3,
+    id: 3,
     // title: "De l’arabe au français, de l’académique au juridique, nous traduisons tout.",
     title: {
-       fr: "De l’arabe au français, de l’académique au juridique, nous traduisons tout.",
-      en: "From Arabic to French, from academic to legal, we translate everything.",
-      ar: "من العربية إلى الفرنسية، ومن الأكاديمية إلى القانونية، نترجم كل شيء."
-    
+      fr: "Les mots changent, le sens demeure",
+      en: "Words change, the meaning remains",
+      ar: "الكلمات تتغير، لكن المعنى يبقى"
+
     },
     description: {
       fr: "",
@@ -175,75 +175,75 @@ export const rightLists = [
 ];
 
 export const services = [
-  { 
-    id: 1, 
+  {
+    id: 1,
     title: {
       fr: "Traduction Juridique",
       en: "Legal Translation",
       ar: "الترجمة القانونية"
-    }, 
-    icon: Scale, 
+    },
+    icon: Scale,
     desc: {
       fr: "Traduction précise et fidèle de contrats, jugements, lois, actes notariés et autres documents légaux, en respectant la terminologie juridique.",
       en: "Accurate and faithful translation of contracts, judgments, laws, notarial acts, and other legal documents, respecting legal terminology.",
       ar: "ترجمة دقيقة وموثوقة للعقود والأحكام والقوانين والمستندات الموثقة وغيرها من الوثائق القانونية، مع احترام المصطلحات القانونية."
-    } 
+    }
   },
-  { 
-    id: 2, 
+  {
+    id: 2,
     title: {
       fr: "Traduction Académique",
       en: "Academic Translation",
       ar: "الترجمة الأكاديمية"
-    }, 
-    icon: GraduationCap, 
+    },
+    icon: GraduationCap,
     desc: {
       fr: "Traduction rigoureuse de mémoires, thèses, articles scientifiques et supports pédagogiques, adaptée aux exigences académiques et universitaires.",
       en: "Rigorous translation of dissertations, theses, scientific articles, and educational materials, tailored to academic and university standards.",
       ar: "ترجمة دقيقة للأطروحات والرسائل الجامعية والمقالات العلمية والمواد التعليمية، بما يتوافق مع المعايير الأكاديمية والجامعية."
-    } 
+    }
   },
-  { 
-    id: 3, 
+  {
+    id: 3,
     title: {
       fr: "Traduction Professionnelle",
       en: "Professional Translation",
       ar: "الترجمة المهنية"
-    }, 
-    icon: Briefcase, 
+    },
+    icon: Briefcase,
     desc: {
       fr: "Traduction de rapports d’entreprise, manuels techniques, présentations et correspondances professionnelles, avec un vocabulaire clair et adapté au contexte.",
       en: "Translation of business reports, technical manuals, presentations, and professional correspondence, with clear and context-appropriate vocabulary.",
       ar: "ترجمة تقارير الشركات والدلائل التقنية والعروض التقديمية والمراسلات المهنية، باستخدام مصطلحات واضحة ومناسبة للسياق."
-    } 
+    }
   },
-  { 
-    id: 4, 
+  {
+    id: 4,
     title: {
       fr: "Traduction Administrative",
       en: "Administrative Translation",
       ar: "الترجمة الإدارية"
-    }, 
-    icon: FileText, 
+    },
+    icon: FileText,
     desc: {
       fr: "Traduction certifiée de certificats, attestations, formulaires et dossiers officiels destinés aux administrations et organismes publics ou privés.",
       en: "Certified translation of certificates, attestations, forms, and official files intended for public or private administrations and organizations.",
       ar: "ترجمة معتمدة للشهادات والإفادات والنماذج والملفات الرسمية الموجهة للإدارات والهيئات العامة أو الخاصة."
-    } 
+    }
   },
-  { 
-    id: 5, 
+  {
+    id: 5,
     title: {
       fr: "Autres",
       en: "Others",
       ar: "أخرى"
-    }, 
-    icon: Globe, 
+    },
+    icon: Globe,
     desc: {
       fr: "Traduction sur mesure de tout type de document, selon vos besoins spécifiques, qu’il soit personnel, professionnel ou institutionnel.",
       en: "Tailor-made translation of any type of document, according to your specific needs, whether personal, professional, or institutional.",
       ar: "ترجمة مخصصة لأي نوع من المستندات، وفقًا لاحتياجاتكم الخاصة، سواء كانت شخصية أو مهنية أو مؤسساتية."
-    } 
+    }
   }
 ];
 

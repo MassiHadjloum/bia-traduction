@@ -4,11 +4,11 @@
     "locale": "{locale, select, en {🇬🇧 Anglais} fr {🇫🇷 Français} ar {🇸🇦 Arabe} other {🔍 Inconnu} }"
   },
   "hero": {
-    "navtitle": "Bureau de Traduction – Ouaguenoun ",
+    "navtitle": "Office de traduction officiel – Ouaguenoun ",
     "navDesc": "Maitre Bia",
-    "title": "Bureau de Traduction – Ouaguenoun - <s_title>Maitre Bia</s_title>",
+    "title": "Office de traduction officiel – Ouaguenoun - <s_title>Maitre Bia</s_title>",
     "subtitle": "Spécialisé dans la traduction de documents juridiques, académiques, administratifs et professionnels.",
-    "tagline": "Traductions précises en Arabe, Français et Anglais",
+    "tagline": "Traductions  précises  en  Arabe, Français  et  Anglais",
     "button": "Contactez nous"
   },
   "grid": {
@@ -16,7 +16,7 @@
   },
   "services": {
     "title": "Nos <s_title>Services</s_title>",
-    "description": "Nous mettons à votre disposition une expertise en traduction officielle (arabe, français, anglais), pour tous vos documents juridiques, académiques, administratifs et professionnels."
+    "description": "Nous mettons à votre disposition une traduction officielle et précise (arabe, français, anglais), pour tous vos documents juridiques, académiques, administratifs et professionnels."
   },
   "about": {
     "title": "Pourquoi nous <s_title>Choisir</s_title> ?"
@@ -36,7 +36,7 @@
         "closed": "Fermé"
       },
       "addressTitle": "Adresse du siège",
-      "addressValue": "À côté de la Polyclinique Tiqobaɛin Wagnun",
+      "addressValue": "À côté de la Polyclinique Tiqobaɛin Ouaguenoun",
       "phoneTitle": "Contacts",
       "phoneValue": "0553 91 38 21 / 0698 53 48 72",
       "emailTitle": "Courriel",
@@ -63,8 +63,8 @@
     }
   },
   "footer": {
-    "title": "Prêt à donner <s_title>plus de portée et d’impact</s_title> à vos mots au-delà des frontières ?",
-    "subtitle": "Confiez-nous vos documents et bénéficiez de traductions professionnelles, précises et adaptées à votre audience, partout dans le monde.",
+    "title": "Donnez de portée et de valeur <s_title>à vos documents</s_title> au-delà des frontières.",
+    "subtitle": "Confiez-nous vos documents et bénéficiez de traductions fiables, précises et adaptées à vos besoins, toujours livrées dans les délais.",
     "button": "Entrons en contact"
   },
   "notFound": {
@@ -88,8 +88,8 @@
         "answer": "La durée dépend du volume et de la complexité du document. Nous nous engageons à respecter vos délais."
       },
       {
-        "question": "Proposez-vous des services de relecture ?",
-        "answer": "Oui, nous offrons un service de relecture et de validation finale afin de garantir l’exactitude des traductions."
+        "question": "Dois-je apporter l’original de mon document pour une traduction certifiée ?",
+        "answer": "Oui, pour toute traduction certifiée, le document original est obligatoire. Cela garantit l’authenticité et la validité légale de la traduction."
       }
     ]
   }

@@ -44,7 +44,7 @@ const MobileNavigation = () => {
 
       <Sheet open={open} onOpenChange={setOpen}
       >
-        <SheetTrigger>
+        <SheetTrigger aria-label="nav-menu">
           <MagicButton
             title={""}
             icon={<MenuIcon />}
