@@ -1,13 +1,12 @@
 import { FaLocationArrow } from "react-icons/fa6";
 import MagicButton from "./MagicButton";
-import { socialMedia } from "@/constants";
 import { getTranslations } from "next-intl/server";
 import SocialMedia from "./SocialMedia";
 
 const Footer = async () => {
   const t = await getTranslations("footer")
   return (
-    <footer className="w-full pt-20 pb-10" id="contact">
+    <footer className="w-full md:pt-20 py-10" id="contact">
       <div className="flex flex-col items-center">
         <h1 className="heading lg:max-w-[45vw]">
           {t.rich("title", {

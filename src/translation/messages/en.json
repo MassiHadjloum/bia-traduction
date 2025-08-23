@@ -74,5 +74,26 @@
     "tagline": "404 – Page Not Found",
     "subtitle": "Oops! The page you are looking for does not exist or has been moved.",
     "button": "Back to Home"
+  },
+  "faq": {
+    "title": "Frequently <s_title>Asked Questions</s_title>",
+    "items": [
+      {
+        "question": "What types of documents do you translate?",
+        "answer": "We translate legal, academic, administrative, and professional documents in Arabic, French, and English."
+      },
+      {
+        "question": "Are your translations certified?",
+        "answer": "Yes, we provide certified translations that comply with official standards."
+      },
+      {
+        "question": "How long does a translation take?",
+        "answer": "The timeline depends on the volume and complexity of the document. We are committed to meeting your deadlines."
+      },
+      {
+        "question": "Do you offer proofreading services?",
+        "answer": "Yes, we provide proofreading and final validation to ensure accuracy and quality."
+      }
+    ]
   }
 }

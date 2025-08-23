@@ -3,15 +3,18 @@
 import { FaLocationArrow } from "react-icons/fa6";
 import MagicButton from "./MagicButton";
 import { Spotlight } from "./ui/Spotlight";
-import { TextGenerateEffect } from "./ui/TextGenerateEffect";
 import { getTranslations } from "next-intl/server";
+
+import dynamic from "next/dynamic";
+const TextGenerateEffect = dynamic(() => import("./ui/TextGenerateEffect"), { ssr: false });
+
 
 const Hero = async () => {
   const t = await getTranslations("hero");
   return (
     <>
       <div className="bg-transparent h-16 w-full" />
-      <div className="pb-20 pt-10" id="hero">
+      <div className="md:pb-20 pb-0 pt-10" id="hero">
         {/* Spotlights */}
         <div>
           <Spotlight

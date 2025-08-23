@@ -13,6 +13,7 @@ import MagicButton from "../MagicButton";
 import Image from "next/image";
 import { leftLists, rightLists } from "@/data";
 import { useLocale, useTranslations } from "next-intl";
+import { Compare } from "./compare";
 
 export const BentoGrid = ({
   className,
@@ -65,6 +66,12 @@ export const BentoGridItem = ({
       preserveAspectRatio: "xMidYMid slice",
     },
   };
+
+  // const defineImageSrc = () => {
+  //   if(local === "ar") return "/en.png"
+  //   else if(local === "en") return "/fr.png"
+  //   else return "/en.png"
+  // }
 
   return (
     <div
@@ -120,7 +127,8 @@ export const BentoGridItem = ({
         <div
           className={cn(
             titleClassName,
-            "group-hover/bento:translate-x-2 transition duration-200 relative md:h-full min-h-40 flex flex-col px-5 p-5 lg:p-10"
+            "group-hover/bento:translate-x-2 transition duration-200 relative md:h-full min-h-40 flex flex-col",
+            id !== 1 && "px-5 p-5 lg:p-10"
           )}
         >
           {/* change the order of the title and des, font-extralight, remove text-xs text-neutral-600 dark:text-neutral-300 , change the text-color */}
@@ -135,13 +143,24 @@ export const BentoGridItem = ({
             {title}
           </div>
 
+          {id === 1 && <Compare
+            // firstImage={defineImageSrc()}
+            // secondImage={`/${local !== 'ar' ? local : "fr"}.png`}
+            firstImage={"/fr.png"}
+            secondImage={`/en.png`}
+            firstImageClassName="object-cover object-left-top"
+            secondImageClassname="object-cover object-left-top pb-1"
+            className="h-[250px] w-full md:h-[500px]"
+            slideMode="hover"
+            // autoplay
+          />}
           {/* for the github 3d globe */}
           {id === 2 && <GridGlobe />}
 
           {/* Tech stack list div */}
-          {id === 3 && (
+          {/* {id === 3 && (
             <div className="flex gap-1 lg:gap-5 w-fit absolute -right-3 lg:-right-2">
-              {/* tech stack lists */}
+              {/* tech stack lists * /}
               <div className="flex flex-col gap-3 md:gap-3 lg:gap-8">
                 {leftLists.map((item, i) => (
                   <span
@@ -167,7 +186,7 @@ export const BentoGridItem = ({
                 ))}
               </div>
             </div>
-          )}
+          )} */}
           {id === 6 && (
             <div className="mt-5 relative">
               {/* button border magic from tailwind css buttons  */}

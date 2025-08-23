@@ -1,6 +1,5 @@
 import { socialMedia } from '@/constants';
 import { GlowingEffect } from './ui/glowing-effect';
-import React from 'react';
 
 const SocialMedia = () => {
   return (

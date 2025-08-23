@@ -1,7 +1,6 @@
 "use client";
-import { Mail, Phone, MapPin, Clock, Facebook } from "lucide-react";
+import { Mail, Phone, MapPin, Clock } from "lucide-react";
 import { GlowingEffect } from "./ui/glowing-effect";
-import { socialMedia } from "@/constants";
 import FormContact from "./FormContact";
 import { useLocale, useTranslations } from "next-intl";
 import SocialMedia from "./SocialMedia";
@@ -10,7 +9,7 @@ const Contact = () => {
   const t = useTranslations("contact");
   const locale = useLocale() as "fr" | "en" | "ar";
   return (
-    <section id="contact" className="py-20">
+    <section id="contact" className="py-10 md:py-20">
       <h1 className="heading">
         {t.rich("title", {
           s_title: (chunks) => <span className="text-purple">{chunks}</span>,

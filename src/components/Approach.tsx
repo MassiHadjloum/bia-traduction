@@ -1,21 +1,11 @@
 "use client";
-import React from "react";
 import { useTranslations } from "next-intl";
 import { CanvasRevealCardContent } from "./CanvasRevealCard";
-
-// import dynamic from "next/dynamic";
-
-// const CanvasRevealCardContent = dynamic(() => import("./CanvasRevealCard").then(
-//   (m) => m.CanvasRevealCardContent
-// ), {
-//   ssr: false, // 🚫 désactive SSR
-// });
-
 
 const Approach = () => {
   const t = useTranslations("approach");
   return (
-    <section className="w-full py-20" id="approach">
+    <section className="w-full py-10 md:py-20" id="approach">
       <h1 className="heading">
         {/* Notre <span className="text-purple">Démarche</span> */}
         {t.rich("title", {

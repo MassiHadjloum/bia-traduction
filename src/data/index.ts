@@ -5,11 +5,16 @@ export const gridItems = [
     id: 1,
     // title: "De l’arabe au français, de l’académique au juridique, nous traduisons tout.",
     title: {
-       fr: "De l’arabe au français, de l’académique au juridique, nous traduisons tout.",
-      en: "From Arabic to French, from academic to legal, we translate everything.",
-      ar: "من العربية إلى الفرنسية، ومن الأكاديمية إلى القانونية، نترجم كل شيء."
-    
+       fr: "",
+      en: "",
+      ar: "",
     },
+    // title: {
+    //    fr: "De l’arabe au français, de l’académique au juridique, nous traduisons tout.",
+    //   en: "From Arabic to French, from academic to legal, we translate everything.",
+    //   ar: "من العربية إلى الفرنسية، ومن الأكاديمية إلى القانونية، نترجم كل شيء."
+    
+    // },
     description: {
       fr: "",
       en: "",
@@ -18,7 +23,7 @@ export const gridItems = [
     className: "lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[60vh]",
     imgClassName: "w-full h-full brightness-75",
     titleClassName: "justify-end",
-    img: "/b1.png",
+    img: "",
     spareImg: "",
   },
   {
@@ -40,21 +45,40 @@ export const gridItems = [
     spareImg: "",
   },
   {
-    id: 3,
-     title: {
-      fr: "Vos documents",
-      en: "Your Documents",
-      ar: "مستنداتكم"
+    // id: 3,
+    //  title: {
+    //   fr: "Vos documents",
+    //   en: "Your Documents",
+    //   ar: "مستنداتكم"
+    // },
+    // description: {
+    //   fr: "Dans chaque langue et pour chaque domaine.",
+    //   en: "In every language and for every field.",
+    //   ar: "بكل لغة وفي كل مجال."
+    // },  
+    // className: "lg:col-span-2 md:col-span-3 md:row-span-2",
+    // imgClassName: "",
+    // titleClassName: "justify-center",
+    // img: "/grid.svg",
+    // spareImg: "",
+        id: 3,
+    // title: "De l’arabe au français, de l’académique au juridique, nous traduisons tout.",
+    title: {
+       fr: "De l’arabe au français, de l’académique au juridique, nous traduisons tout.",
+      en: "From Arabic to French, from academic to legal, we translate everything.",
+      ar: "من العربية إلى الفرنسية، ومن الأكاديمية إلى القانونية، نترجم كل شيء."
+    
     },
     description: {
-      fr: "Dans chaque langue et pour chaque domaine.",
-      en: "In every language and for every field.",
-      ar: "بكل لغة وفي كل مجال."
-    },  
+      fr: "",
+      en: "",
+      ar: ""
+    },
+    // className: "lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[60vh]",
     className: "lg:col-span-2 md:col-span-3 md:row-span-2",
-    imgClassName: "",
-    titleClassName: "justify-center",
-    img: "/grid.svg",
+    imgClassName: "w-full h-full brightness-75",
+    titleClassName: "justify-end",
+    img: "/b1.png",
     spareImg: "",
   },
   {

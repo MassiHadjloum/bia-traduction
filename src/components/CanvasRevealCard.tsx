@@ -3,7 +3,6 @@
 import { AnimatePresence, motion } from "framer-motion";
 import AceternityIcon, { Icon } from "./ui/AceternityIcon";
 import { useState } from "react";
-// import { CanvasRevealEffect } from "./ui/CanvasRevealEffect";
 import { useLocale, useTranslations } from "next-intl";
 
 import dynamic from "next/dynamic";
@@ -31,7 +30,7 @@ const Card = ({
       onMouseLeave={() => setHovered(false)}
       // change h-[30rem] to h-[35rem], add rounded-3xl
       className="border border-black/[0.2] group/canvas-card flex items-center justify-center
-       dark:border-white/[0.2]  max-w-sm w-full mx-auto p-4 relative lg:h-[35rem] "
+       dark:border-white/[0.2]  max-w-sm w-full mx-auto p-4 relative lg:h-[35rem] min-h-[22rem] "
       style={{
         //   add these two
         //   you can generate the color from here https://cssgradient.io/
@@ -111,7 +110,7 @@ export const CanvasRevealCardContent = () => {
       effect: (
         <CanvasRevealEffect
           animationSpeed={5.1}
-          containerClassName="bg-emerald-900 overflow-hidden rounded-3xl"
+          containerClassName="bg-emerald-900 overflow-hidden"
         />
       )
     },
@@ -131,7 +130,7 @@ export const CanvasRevealCardContent = () => {
       effect: (
         <CanvasRevealEffect
           animationSpeed={3}
-          containerClassName="bg-pink-900 overflow-hidden rounded-3xl"
+          containerClassName="bg-pink-900 overflow-hidden"
           colors={[
             [255, 166, 158],
             [221, 255, 247],
@@ -156,7 +155,7 @@ export const CanvasRevealCardContent = () => {
       effect: (
         <CanvasRevealEffect
           animationSpeed={3}
-          containerClassName="bg-sky-600 overflow-hidden rounded-3xl"
+          containerClassName="bg-sky-600 overflow-hidden"
           colors={[[125, 211, 252]]}
         />
       )

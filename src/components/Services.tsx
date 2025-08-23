@@ -1,4 +1,3 @@
-import React from "react";
 import { GlowingEffect } from "./ui/glowing-effect";
 import { services } from "@/data";
 import { getLocale, getTranslations } from "next-intl/server";
@@ -7,7 +6,7 @@ export default async function Services() {
   const local = await getLocale() as "fr" | "en" | "ar";
   const t = await getTranslations("services");
   return (
-    <section id="services" className="py-20">
+    <section id="services" className="md:py-20 py-10">
       <h1 className="heading">
         {t.rich("title", {
           s_title: (chunks) => <span className="text-purple">{chunks}</span>,

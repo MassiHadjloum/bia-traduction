@@ -71,5 +71,26 @@
     "tagline": "404 – Page introuvable",
     "subtitle": "Oups ! La page que vous cherchez n’existe pas ou a été déplacée.",
     "button": "Retour à l’accueil"
+  },
+  "faq": {
+    "title": "Questions <s_title>Fréquemment Posées</s_title>",
+    "items": [
+      {
+        "question": "Quels types de documents traduisez-vous ?",
+        "answer": "Nous traduisons des documents juridiques, académiques, administratifs et professionnels en Arabe, Français et Anglais."
+      },
+      {
+        "question": "Vos traductions sont-elles certifiées ?",
+        "answer": "Oui, nous fournissons des traductions certifiées et conformes aux normes officielles."
+      },
+      {
+        "question": "Combien de temps prend une traduction ?",
+        "answer": "La durée dépend du volume et de la complexité du document. Nous nous engageons à respecter vos délais."
+      },
+      {
+        "question": "Proposez-vous des services de relecture ?",
+        "answer": "Oui, nous offrons un service de relecture et de validation finale afin de garantir l’exactitude des traductions."
+      }
+    ]
   }
 }

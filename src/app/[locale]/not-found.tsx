@@ -3,7 +3,7 @@
 import { FaLocationArrow } from "react-icons/fa6";
 import MagicButton from "../../components/MagicButton";
 import { Spotlight } from "../../components/ui/Spotlight";
-import { TextGenerateEffect } from "../../components/ui/TextGenerateEffect";
+import TextGenerateEffect from "../../components/ui/TextGenerateEffect";
 import { getTranslations } from "next-intl/server";
 
 const NotFoundPage = async () => {
