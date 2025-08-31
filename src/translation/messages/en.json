@@ -6,6 +6,28 @@
     "label": "Change language",
     "locale": "{locale, select, en {🇬🇧 English} fr {🇫🇷 French} ar {🇸🇦 Arabic} other {🔍 Unknown} }"
   },
+  "admin": {
+    "subject": "📩 New message received",
+    "contactDetails": "Contact details",
+    "name": "Name",
+    "email": "Email",
+    "message": "Message",
+    "footer": {
+      "location": "📍 Official Translation Office – Ouaguenoun",
+      "note": "This message was automatically sent from the contact form."
+    }
+  },
+  "email_confirmation": {
+    "subject": "✅ Message received",
+    "title": "Hello {name},",
+    "intro": "Thank you for contacting us. We have received your message and our team is already taking care of it.",
+    "followup": "We will get back to you as soon as possible, usually within 24 business hours.",
+    "info": "In the meantime, you can find more information about our translation services (legal, academic, administrative, professional) on our website.",
+    "cta": "Visit our website",
+    "footer_address": "📍 Next to Polyclinic Tiqobaɛin, Ouaguenoun",
+    "footer_phone": "📞 +213 553 91 38 21 / +213 698 53 48 72",
+    "footer_email": "✉️ bia.traduction@gmail.com"
+  },
   "hero": {
     "navtitle": "Official Translation Office – Ouaguenoun ",
     "navDesc": "Master Bia",
@@ -62,7 +84,12 @@
           "placeholder": "Write your message..."
         }
       },
-      "submit": "Send"
+      "submit": "Send",
+      "sending": "Sending...",
+      "successTitle": "✅ Message sent!",
+      "successDesc": "We have received your message and will get back to you shortly.",
+      "errorTitle": "❌ Error",
+      "errorDesc": "Something went wrong. Please try again later."
     }
   },
   "footer": {

@@ -3,6 +3,29 @@
     "label": "Changer de langue",
     "locale": "{locale, select, en {🇬🇧 Anglais} fr {🇫🇷 Français} ar {🇸🇦 Arabe} other {🔍 Inconnu} }"
   },
+  "admin": {
+    "subject": "📩 Nouveau message reçu",
+    "contactDetails": "Détails du contact",
+    "name": "Nom",
+    "email": "Email",
+    "message": "Message",
+    "footer": {
+      "location": "📍 Office de traduction officiel – Ouaguenoun",
+      "note": "Ce message a été transmis automatiquement depuis le formulaire de contact."
+    }
+  },
+  "email_confirmation": {
+    "subject": "✅ Message bien reçu",
+    "title": "Bonjour {name},",
+    "intro": "Merci de nous avoir contactés. Nous avons bien reçu votre message et notre équipe s’en occupe dès maintenant.",
+    "followup": "Nous vous répondrons dans les plus brefs délais, généralement sous 24 heures ouvrables.",
+    "info": "En attendant, vous pouvez retrouver plus d’informations sur nos services de traduction (juridiques, académiques, administratifs, professionnels) sur notre site.",
+    "cta": "Visiter notre site",
+    "footer_address": "📍 À côté de la Polyclinique Tiqobaɛin, Ouaguenoun",
+    "footer_phone": "📞 0553 91 38 21 / 0698 53 48 72",
+    "footer_email": "✉️ bia.traduction@gmail.com"
+  },
+
   "hero": {
     "navtitle": "Office de traduction officiel – Ouaguenoun ",
     "navDesc": "Maitre Bia",
@@ -59,7 +82,12 @@
           "placeholder": "Écrivez votre message..."
         }
       },
-      "submit": "Envoyer"
+      "submit": "Envoyer",
+      "sending": "Envoi en cours...",
+      "successTitle": "✅ Message envoyé !",
+      "successDesc": "Nous avons bien reçu votre message et nous vous répondrons bientôt.",
+      "errorTitle": "❌ Erreur",
+      "errorDesc": "Une erreur est survenue. Veuillez réessayer plus tard."
     }
   },
   "footer": {

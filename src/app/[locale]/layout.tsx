@@ -5,7 +5,7 @@ import { Plus_Jakarta_Sans } from "next/font/google";
 import { ThemeProvider } from "@/components/themes/theme-provider";
 import { locales } from "@/i18n/config";
 import { seoMetadata } from "@/seo/metadata";
-// import HashChecker from "@/components/HashChecker";
+import { Toaster } from "@/components/ui/toaster"
 
 const font = Plus_Jakarta_Sans({
   variable: "--font-sans",
@@ -44,6 +44,7 @@ export default async function RootLayout({
           <NextIntlClientProvider>
             {/* <HashChecker /> */}
             {children}
+             <Toaster />
           </NextIntlClientProvider>
 
         </ThemeProvider>

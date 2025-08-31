@@ -1,10 +1,11 @@
 import { useState } from "react";
-import { Button } from "./ui/button";
 import { GlowingEffect } from "./ui/glowing-effect";
 import { Textarea } from "./ui/textarea";
 import { FaLocationArrow } from "react-icons/fa6";
-import { SendIcon } from "lucide-react";
 import { useLocale, useTranslations } from "next-intl";
+import { sendEmailing } from "@/actions/contact";
+import { toast } from "@/hooks/use-toast";
+import { LoaderIcon } from "lucide-react";
 
 const FormContact = () => {
   const t = useTranslations("contact");
@@ -20,11 +21,40 @@ const FormContact = () => {
     setFormData((prev) => ({ ...prev, [name]: value }));
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const [loading, setLoading] = useState(false);
+
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // console.log("Formulaire soumis ✅", formData);
-    // 👉 Ici tu peux ajouter ton envoi vers une API, emailjs, backend, etc.
+    setLoading(true);
+
+    try {
+      const res = await sendEmailing(
+        formData.email,
+        formData.name,
+        formData.message
+      );
+
+      if (res?.success) {
+        toast({
+          title: t("contactForm.successTitle"), 
+          description: t("contactForm.successDesc"), 
+          variant: "default",
+        });
+        // setFormData({ name: "", email: "", message: "" }); // reset form
+      } else {
+        throw new Error(t("contactForm.errorDesc"));
+      }
+    } catch (error) {
+      toast({
+        title: t("contactForm.errorTitle"), 
+        description: t("contactForm.errorDesc"),
+        variant: "destructive",
+      });
+    } finally {
+      setLoading(false);
+    }
   };
+
 
   return (
     <div className="relative flex-1 rounded-2xl border p-2 md:rounded-3xl md:p-3 mt-6" >
@@ -91,8 +121,8 @@ const FormContact = () => {
               className={`inline-flex h-full w-full cursor-pointer items-center justify-center rounded-lg
              bg-slate-950 px-7 text-sm font-medium text-white backdrop-blur-3xl gap-2`}
             >
-              {t("contactForm.submit")}
-              <FaLocationArrow className="w-5 h-5" />
+              {loading ? t("contactForm.sending") : t("contactForm.submit")}
+              {loading ? <LoaderIcon className="w-5 h-5" /> : <FaLocationArrow className="w-5 h-5" />} 
             </span>
           </button>
 
