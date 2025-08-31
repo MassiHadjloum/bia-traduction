@@ -4,6 +4,7 @@
     "locale": "{locale, select, en {🇬🇧 Anglais} fr {🇫🇷 Français} ar {🇸🇦 Arabe} other {🔍 Inconnu} }"
   },
   "admin": {
+    "from": "Office de traduction officiel",
     "subject": "📩 Nouveau message reçu",
     "contactDetails": "Détails du contact",
     "name": "Nom",
@@ -17,6 +18,7 @@
   "email_confirmation": {
     "subject": "✅ Message bien reçu",
     "title": "Bonjour {name},",
+    "location": "📍 Office de traduction officiel – Ouaguenoun",
     "intro": "Merci de nous avoir contactés. Nous avons bien reçu votre message et notre équipe s’en occupe dès maintenant.",
     "followup": "Nous vous répondrons dans les plus brefs délais, généralement sous 24 heures ouvrables.",
     "info": "En attendant, vous pouvez retrouver plus d’informations sur nos services de traduction (juridiques, académiques, administratifs, professionnels) sur notre site.",

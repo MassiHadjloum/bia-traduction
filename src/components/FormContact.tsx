@@ -40,11 +40,12 @@ const FormContact = () => {
           description: t("contactForm.successDesc"), 
           variant: "default",
         });
-        // setFormData({ name: "", email: "", message: "" }); // reset form
+        setFormData({ name: "", email: "", message: "" }); // reset form
       } else {
         throw new Error(t("contactForm.errorDesc"));
       }
     } catch (error) {
+      // console.log("=== ", error)
       toast({
         title: t("contactForm.errorTitle"), 
         description: t("contactForm.errorDesc"),

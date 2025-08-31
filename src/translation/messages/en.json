@@ -9,6 +9,7 @@
   "admin": {
     "subject": "📩 New message received",
     "contactDetails": "Contact details",
+    "from": "Official Translation Office",
     "name": "Name",
     "email": "Email",
     "message": "Message",
@@ -20,6 +21,7 @@
   "email_confirmation": {
     "subject": "✅ Message received",
     "title": "Hello {name},",
+    "location": "📍 Official Translation Office – Ouaguenoun,",
     "intro": "Thank you for contacting us. We have received your message and our team is already taking care of it.",
     "followup": "We will get back to you as soon as possible, usually within 24 business hours.",
     "info": "In the meantime, you can find more information about our translation services (legal, academic, administrative, professional) on our website.",

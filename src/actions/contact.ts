@@ -6,18 +6,18 @@ import { Resend } from "resend";
 export const sendEmailing = async (email: string, name: string, message: string) => {
   const t = await getTranslations("admin");
   const resend = new Resend(process.env.BIA_RESENd_API_KEY)
-  // const resend = new Resend("re_CeN3ngqs_5G8JWFg8rNs8v2JhijARCjDp")
+  // const resend = new Resend(process.env.RESENd_API_KEY)
 
   try {
     const { data, error } = await resend.emails.send({
-      from: '<onboarding@resend.dev>',
+      from: `${t("from")} <onboarding@resend.dev>`,
       to: email,
       subject: 'No reply',
       html: await getConfirmationTemplate({ name }),
     });
-
+    // console.log("errorr ", error)
     await resend.emails.send({
-      from: '<onboarding@resend.dev>',
+      from: `${t("from")} <onboarding@resend.dev>`,
       // to: "massihadjloum@gmail.com",
       to: "bia.traduction.com",
       replyTo: email,
