@@ -19,7 +19,7 @@ export const sendEmailing = async (email: string, name: string, message: string)
     await resend.emails.send({
       from: `${t("from")} <onboarding@resend.dev>`,
       // to: "massihadjloum@gmail.com",
-      to: "bia.traduction.com",
+      to: "bia.traduction@gmail.com",
       replyTo: email,
       subject: "📩 Nouveau message",
       html: await getAdminTemplate({ name, email, message }),
