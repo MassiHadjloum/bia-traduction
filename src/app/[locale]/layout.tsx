@@ -6,13 +6,18 @@ import { ThemeProvider } from "@/components/themes/theme-provider";
 import { locales } from "@/i18n/config";
 import { seoMetadata } from "@/seo/metadata";
 import { Toaster } from "@/components/ui/toaster"
+import StructuredData from "@/components/StucturedData";
+import { getLocalBusinessSchema } from "@/lib/structured-data";
 
 const font = Plus_Jakarta_Sans({
   variable: "--font-sans",
   subsets: ["latin"],
   weight: ["300", "400", "500", "600", "700"]
 });
+// _dmarc
 
+// TXT	
+// v=DMARC1; p=none;
 export async function generateMetadata({ params }: { params: { locale: string } }) {
   const locale = params.locale;
   return seoMetadata[locale] || seoMetadata["fr"]; // fallback en FR
@@ -32,6 +37,10 @@ export default async function RootLayout({
   } 
   return (
     <html lang={locale} >
+      <head>
+        <StructuredData data={getLocalBusinessSchema(locale)} />
+        {/* Vos autres meta tags */}
+      </head>
       <body
         className={`${font.variable} bg-white dark:bg-dark-300 font-sans antialiased`}
       >

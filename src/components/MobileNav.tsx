@@ -15,6 +15,7 @@ import { useLocale, useTranslations } from "next-intl"
 import MagicButton from "./MagicButton"
 import { MenuIcon } from "lucide-react"
 import LocalSwitcher from "./translate/local-switcher"
+import Image from "next/image"
 
 const MobileNavigation = () => {
   const [open, setOpen] = useState(false)
@@ -40,21 +41,25 @@ const MobileNavigation = () => {
     <header className={`mobile-header absolute z-[5000] top-0 inset-x-0
     bg-black-200 backdrop-blur-md shadow-lg shadow-white-100/50 
     ${locale === "ar" && "flex justify-end"}`}
-     >
+    >
 
       <Sheet open={open} onOpenChange={setOpen}
       >
-        <SheetTrigger aria-label="nav-menu">
-          <MagicButton
-            title={""}
-            icon={<MenuIcon />}
-            position="right"
-          />
-        </SheetTrigger>
+        <div className={`${locale === 'ar' ? 'flex-row-reverse' : 'flex-row'} flex w-full justify-between`}>
+          <SheetTrigger aria-label="nav-menu">
+            <MagicButton
+              title={""}
+              icon={<MenuIcon />}
+              position="right"
+            />
+          </SheetTrigger>
+          <Image src={"/logo-bg.png"} width={60} height={60} alt="logo" />
+        </div>
+
         <SheetContent className="shad-sheet h-screen px-3 pt-10 z-[5001]"
           aria-describedby="mobile-nav-description"
-           side={locale === "ar" ? "right" : "left"}
-          >
+          side={locale === "ar" ? "right" : "left"}
+        >
           <SheetTitle>
             <div className="text-center mt-8">
               <p className="text-purple">{t("navtitle")}</p>

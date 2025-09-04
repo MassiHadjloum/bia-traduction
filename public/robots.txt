@@ -1,4 +1,6 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://bia-traduction-r8gl.vercel.app/sitemap.xml
+Sitemap: https://www.biatraduction.com/fr/sitemap.xml
+Sitemap: https://www.biatraduction.com/ar/sitemap.xml
+Sitemap: https://www.biatraduction.com/en/sitemap.xml

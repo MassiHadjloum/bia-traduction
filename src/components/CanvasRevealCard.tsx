@@ -161,7 +161,6 @@ export const CanvasRevealCardContent = () => {
       )
     }
   ];
-  locale === "ar" && steps.reverse(); // Reverse the steps for Arabic locale
   return (
     steps.map((step) => (
       <Card

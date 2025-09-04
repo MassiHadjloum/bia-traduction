@@ -1,0 +1,141 @@
+import type { Metadata } from "next";
+
+const baseUrl = "https://www.biatraduction.com";
+
+export const seoMetadata: Record<string, Metadata> = {
+  fr: {
+    title: "Office de traduction officiel – Ouaguenoun – Maître Bia",
+    icons: {
+      icon: "/logo.ico", // ton favicon
+    },
+    description:
+      "Spécialiste de la traduction de documents juridiques, académiques, administratifs et professionnels. Disponible en Arabe, Français et Anglais.",
+    keywords: [
+      "Office de traduction officiel",
+      "traduction officielle",
+      "traduction juridique",
+      "traduction académique",
+      "traduction professionnelle",
+      "Kabylie",
+      "Ouaguenoun",
+      "français",
+      "arabe",
+      "anglais",
+    ],
+    openGraph: {
+      title: "Office de traduction officiel – Maître Bia",
+      description:
+        "Traductions précises et professionnelles en Arabe, Français et Anglais.",
+      url: `${baseUrl}/fr`,
+      siteName: "Office de traduction officiel",
+      images: [
+        {
+          url: `${baseUrl}/og-image-fr.jpg`,
+          width: 1200,
+          height: 630,
+          alt: "Office de traduction officiel – Maître Bia",
+        },
+      ],
+      locale: "fr_FR",
+      type: "website",
+    },
+    alternates: {
+      canonical: `${baseUrl}/fr`,
+      languages: {
+        fr: `${baseUrl}/fr`,
+        ar: `${baseUrl}/ar`,
+        en: `${baseUrl}/en`,
+      },
+    },
+  },
+
+  ar: {
+    title: "ديوان الترجمة الرسمية – واقنون – الأستاذ بية",
+    icons: {
+      icon: "/logo.ico", // ton favicon
+    },
+    description:
+      "متخصصون في ترجمة الوثائق القانونية والأكاديمية والإدارية والمهنية. نقدم ترجمات دقيقة باللغات العربية والفرنسية والإنجليزية.",
+    keywords: [
+      "مكتب ترجمة",
+      "ترجمة رسمية",
+      "ترجمة قانونية",
+      "ترجمة أكاديمية",
+      "ترجمة مهنية",
+      "القبائل",
+      "واقنون",
+      "الفرنسية",
+      "العربية",
+      "الإنجليزية",
+    ],
+    openGraph: {
+      title: "ديوان الترجمة الرسمية – الأستاذ بية",
+      description: "ترجمات دقيقة واحترافية باللغات العربية والفرنسية والإنجليزية.",
+      url: `${baseUrl}/ar`,
+      siteName: "ديوان الترجمة الرسمية",
+      images: [
+        {
+          url: `${baseUrl}/og-image-ar.jpg`,
+          width: 1200,
+          height: 630,
+          alt: "ديوان الترجمة الرسمية – الأستاذ بية",
+        },
+      ],
+      locale: "ar_DZ",
+      type: "website",
+    },
+    alternates: {
+      canonical: `${baseUrl}/ar`,
+      languages: {
+        fr: `${baseUrl}/fr`,
+        ar: `${baseUrl}/ar`,
+        en: `${baseUrl}/en`,
+      },
+    },
+  },
+
+  en: {
+    title: "Official Translation Office – Ouaguenoun – Maître Bia",
+    icons: {
+      icon: "/logo.ico", // ton favicon
+    },
+    description:
+      "Specialized in translating legal, academic, administrative, and professional documents. Accurate translations in Arabic, French, and English.",
+    keywords: [
+      "Official Translation Office",
+      "official translation",
+      "legal translation",
+      "academic translation",
+      "professional translation",
+      "Kabylie",
+      "Ouaguenoun",
+      "French",
+      "Arabic",
+      "English",
+    ],
+    openGraph: {
+      title: "Official Translation Office – Maître Bia",
+      description: "Accurate and professional translations in Arabic, French, and English.",
+      url: `${baseUrl}/en`,
+      siteName: "Official Translation Office",
+      images: [
+        {
+          url: `${baseUrl}/og-image-en.jpg`,
+          width: 1200,
+          height: 630,
+          alt: "Official Translation Office – Maître Bia",
+        },
+      ],
+      locale: "en_US",
+      type: "website",
+    },
+    alternates: {
+      canonical: `${baseUrl}/en`,
+      languages: {
+        fr: `${baseUrl}/fr`,
+        ar: `${baseUrl}/ar`,
+        en: `${baseUrl}/en`,
+      },
+    },
+  },
+};

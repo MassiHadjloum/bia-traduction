@@ -10,14 +10,14 @@ export const sendEmailing = async (email: string, name: string, message: string)
 
   try {
     const { data, error } = await resend.emails.send({
-      from: `${t("from")} <onboarding@resend.dev>`,
+      from: `contact@biatraduction.com`,
       to: email,
       subject: 'No reply',
       html: await getConfirmationTemplate({ name }),
     });
     // console.log("errorr ", error)
     await resend.emails.send({
-      from: `${t("from")} <onboarding@resend.dev>`,
+      from: `contact@biatraduction.com`,
       // to: "massihadjloum@gmail.com",
       to: "bia.traduction@gmail.com",
       replyTo: email,
@@ -116,7 +116,7 @@ const getConfirmationTemplate = async ({ name }: { name: string }) => {
           <p>${t("followup")}</p>
           <p>${t("info")}</p>
           <div class="cta">
-            <a href="http://bia-traduction.vercel.app/">${t("cta")}</a>
+            <a href="https://www.biatraduction.com">${t("cta")}</a>
           </div>
         </div>
         <div class="footer" ${locale === "ar" ? 'dir="rtl"' : ""}>

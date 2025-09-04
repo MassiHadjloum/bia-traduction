@@ -92,7 +92,7 @@ const AnimatedPath = ({ scrollYProgress, svgHeight, y1, y2, position }: Animated
               ? "none"
               : "rgba(0, 0, 0, 0.24) 0px 3px 8px",
         }}
-        className="border-netural-200 ml-[27px] flex h-4 w-4 items-center justify-center rounded-full border shadow-sm"
+        className="border-netural-200 ml-[9px] flex h-4 w-4 items-center justify-center rounded-full border shadow-sm"
       >
         <motion.div
           transition={{
@@ -103,7 +103,7 @@ const AnimatedPath = ({ scrollYProgress, svgHeight, y1, y2, position }: Animated
             backgroundColor: scrollYProgress.get() > 0 ? "white" : "#10b981",
             borderColor: scrollYProgress.get() > 0 ? "white" : "#059669",
           }}
-          className="h-2 w-2 rounded-full border border-neutral-300 bg-white"
+          className="h-2 w-2 rounded-full border border-neutral-300 bg-green-400"
         />
       </motion.div>
       <svg

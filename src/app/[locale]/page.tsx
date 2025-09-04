@@ -10,7 +10,6 @@ import FloatingNav from "@/components/ui/FloatingNavbar";
 import { TracingBeam } from "@/components/ui/tracing-beam";
 // import ScrollToTop from "@/components/ui/ScrollToTop";
 import { navItems } from "@/constants";
-import { getLocale } from "next-intl/server";
 import dynamic from "next/dynamic";
 
 
@@ -23,12 +22,11 @@ const ScrollToTop = dynamic(() => import("@/components/ui/ScrollToTop"), { ssr: 
 
 
 export default async function Home() {
-  const locale = await getLocale();
   return (
     <main className="relative bg-black-100 flex justify-center items-center flex-col overflow-hidden mx-auto">
       <MobileNavigation />
       <div className="max-w-7xl w-full sm:px-10 px-5">
-        <FloatingNav navItems={locale === "ar" ? navItems.reverse() : navItems} />
+        <FloatingNav navItems={navItems} />
         <TracingBeam>
           <Hero />
           <Grid />
@@ -44,18 +42,4 @@ export default async function Home() {
     </main>
   );
 }
-
-// j'ai refait l'analyse des performance avec google chrome lighthouse, j'ai 28% sur mobile (tres mauvais)
-// Metrics
-// Expand view
-// First Contentful Paint
-// 6.3 s
-// Largest Contentful Paint
-// 6.5 s
-// Total Blocking Time
-// 107,580 ms
-// Cumulative Layout Shift
-// 0
-// Speed Index
-// 26.5 s
 

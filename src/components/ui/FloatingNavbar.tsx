@@ -11,6 +11,7 @@ import { cn } from "@/lib/utils";
 import { ArrowLeftCircle } from "lucide-react";
 import LocalSwitcher from "../translate/local-switcher";
 import { useLocale } from "next-intl";
+import Image from "next/image";
 
 const FloatingNav = ({
   navItems,
